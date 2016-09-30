@@ -14,17 +14,4 @@ class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Li
         $config->save()
     }
 }
-class TaskItem extends \pocketmine\scheduler\PluginTask{
-    public function onRun($t){
-        foreach ($this->getOwner()->getServer()->getOnlinePlayers() as $p){
-            foreach($this->getOwner()->getConfig()->get("Worlds") as $worlds){
-                foreach($this->getOwner()->getConfig()->get("Item") as $item){
-                    $i = 0
-                    $player = $p->getLevel()->getName($worlds);
-                    $player->getInventory()->removeItem($item, 0, $i);
-                }
-            }
-        }
-    }
-}
 ?>
