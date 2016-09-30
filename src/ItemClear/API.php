@@ -8,7 +8,6 @@ class API extends ABI{
         if($array === $this || ! is_array($array) ){
             return;
         }
-        return $array[$index];
     }
     
     public function getVar(){
