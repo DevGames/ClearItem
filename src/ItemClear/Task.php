@@ -15,7 +15,7 @@ class Task extends \pocketmine\scheduler\PluginTask{
         foreach ($this->owner->array as $ap){
         $a = $this->owner->getServer()->getPlayer($ap);
            if($worldconfig == $this->owner->array["w"][$a->getName()]){
-                $a->getInventory()->removeItem(\pocketmine\item\Item::get($items,0,PHP_INT_MAX));
+                $a->getInventory()->removeItem(\pocketmine\item\Item::get($items,0,64));
            }
           }
         }
