@@ -1,4 +1,4 @@
 # ItemClear
-* Remove item in Config.
+* Remove item in The Worlds.
 * item in Config.
 * worlds in Config.
