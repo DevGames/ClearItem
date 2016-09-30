@@ -2,7 +2,7 @@
 
 namespace ItemClear;
 
-abstract class ABI extends Nawaf1b{
+abstract class ABI extends Main{ # Fix
     
     abstract public function getPlayer($array,$index);
     
