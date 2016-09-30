@@ -8,6 +8,11 @@ class Event extends API implements \pocketmine\event\Listener{
         $this->getVar()->array[$ev->getPlayer()->getName()] = $ev->getPlayer();
         $this->getVar()->array["w"][$ev->getPlayer()->getName()] = $ev->getPlayer()->getLevel()->getFolderName();
     }
+        
+        public function onJoin(\pocketmine\event\player\PlayerJoinEvent $ev){
+        $this->getVar()->array[$ev->getPlayer()->getName()] = $ev->getPlayer();
+        $this->getVar()->array["w"][$ev->getPlayer()->getName()] = $ev->getPlayer()->getLevel()->getFolderName();
+    }
     
 }
 ?>
