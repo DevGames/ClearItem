@@ -18,7 +18,7 @@ class Task extends \pocketmine\scheduler\PluginTask{
            if($worldconfig == $this->owner->array["w"][$a->getName()]){
             if($inv->getId() == $items){
                 $a->getInventory()->removeItem(\pocketmine\item\Item::get($items,0,PHP_INT_MAX));
-           }
+           }}}
           }
         }
     }
