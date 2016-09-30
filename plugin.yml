@@ -1,4 +1,4 @@
-name: ItemClear
+name: ClearItem
 mine: ItemClear\Main
 version: 1.3.5
 api: 2.0.0
