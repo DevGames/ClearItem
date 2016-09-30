@@ -1,3 +1,3 @@
 <?php
-namespase ItemClear;
+namespace ItemClear;
 ?>
