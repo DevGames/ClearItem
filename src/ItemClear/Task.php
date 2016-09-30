@@ -11,7 +11,7 @@ class Task extends \pocketmine\scheduler\PluginTask{
     }
     
     public function onRun($tick){
-       foreach($this->owner->getVar()->config->get("worlds") as $worldconfig){foreach($this->owner->getVar()->config->get("Item") as $items){
+       foreach($this->owner->getVar()->config->get("Worlds") as $worldconfig){foreach($this->owner->getVar()->config->get("Item") as $items){
         foreach ($this->owner->getServer()->getOnlinePlayers() as $p){
         $a = $this->owner->getPlayer($this->owner->getVar()->array, $p);
         foreach ($a->getInventory()->getContents() as $inv){
