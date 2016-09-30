@@ -15,7 +15,7 @@ class Main extends \pocketmine\plugin\PluginBase{
             "Item" => array(0,0),
         ];
         $this->config = new \pocketmine\utils\Config($this->getDataFolder()."config.yml",\pocketmine\utils\Config::YAML,$cfg);
-        $this->config->save()
+        $this->config->save();
     }
 }
 ?>
