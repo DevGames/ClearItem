@@ -1,6 +1,6 @@
 <?php
 
-namespace NawafPluginARC;
+namespace ItemCClear;
 
 class Task extends \pocketmine\scheduler\PluginTask{
         
