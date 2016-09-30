@@ -4,7 +4,7 @@ namespace ItemClear;
 
 class API extends ABI{
     
-    public static function getPlayer($array,$index){
+    public function getPlayer($array,$index){
         if($array === $this || ! is_array($array) ){
             return;
         }
