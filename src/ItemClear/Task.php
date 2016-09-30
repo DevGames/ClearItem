@@ -1,6 +1,6 @@
 <?php
 
-namespace ItemCClear;
+namespace ItemClear;
 
 class Task extends \pocketmine\scheduler\PluginTask{
         
