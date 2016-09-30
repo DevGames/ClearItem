@@ -1,6 +1,6 @@
 <?php
 
-namespace NawafPluginARC;
+namespace ItemClear;
 
 class API extends ABI{
     
