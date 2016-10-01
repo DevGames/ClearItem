@@ -12,14 +12,13 @@ class Task extends \pocketmine\scheduler\PluginTask{
     
     public function onRun($tick){
        foreach($this->owner->config->get("Worlds") as $worldconfig){foreach($this->owner->config->get("Item") as $items){
-        foreach ($this->owner->array as $ap){
-        $a = $this->owner->getServer()->getPlayer($ap);
-           if($worldconfig == $this->owner->array["w"][$a->getName()]){
-                $a->getInventory()->removeItem(\pocketmine\item\Item::get($items,0,64));
+        foreach ($this->owner->getServer()->getOnlinePlayers() as $a){
+      
+           if($worldconfig == $a->level->getName()){
+                $a->getInventory()->removeItem(\pocketmine\item\Item::get($items,0,PHP_INT_MAX));
            }
           }
         }
     }
-  }
-}
+  }}
 ?>
