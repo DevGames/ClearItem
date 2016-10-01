@@ -8,7 +8,6 @@ class Main extends \pocketmine\plugin\PluginBase{
     public $config;
     
     public function onEnable() {
-        $this->getServer()->getPluginManager()->registerEvents(new Event(), $this);
         $this->getServer()->getScheduler()->scheduleRepeatingTask(new Task($this), 20);
         $cfg = [
             "Worlds" => array("World","World"),
