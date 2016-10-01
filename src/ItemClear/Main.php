@@ -1,5 +1,5 @@
 <?php
-namespace ItemClear;
+namespace ClearItem;
 class Main extends \pocketmine\plugin\PluginBase{
     public $config;
     public function onEnable(){
