@@ -4,7 +4,6 @@ namespace ItemClear;
 
 class Main extends \pocketmine\plugin\PluginBase{
     
-    public $array = array();
     public $config;
     
     public function onEnable() {
