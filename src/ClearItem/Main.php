@@ -2,6 +2,7 @@
 namespace ClearItem;
 class Main extends \pocketmine\plugin\PluginBase{
     public $config;
+    
     public function onEnable(){
         @mkdir($this->getDataFolder());
         $cfg = ["Worlds" => array("World","World"),"Item" => array(0,0),];
